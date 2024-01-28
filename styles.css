@@ -8,9 +8,11 @@ body {
 form {
     border: 1px solid #ccc;
     padding: 1rem;
+    display:list-item;
+    list-style: none;
 }
 
-input,
+
 textarea {
     display: block;
     width: 100%;
@@ -30,9 +32,103 @@ form button {
 
 header {
     background-color: teal;
-    color: white;
+    color: black;
     text-align: center;
     padding: 1rem;
     margin-bottom: 1rem;
 }
- 
+
+a:link { 
+    text-decoration: none;
+    color: teal; 
+  } 
+a:visited { 
+    text-decoration: none; 
+  } 
+a:hover { 
+    text-decoration: none; 
+  } 
+a:active { 
+    text-decoration: none; 
+  }
+
+
+img {
+    width: 180px;
+}
+
+.img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+aside {
+    float: left;
+    align-items: center;
+}
+
+li {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 1px;
+    margin-top: 1x;
+}
+
+nav {
+    padding-bottom:10px;
+    padding-right:40px;
+}
+
+main {
+    padding-left: 150px;
+    padding-bottom: 300px;
+}
+h2 {
+    padding-top: 25px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+label {
+    padding-top: 5px;
+}
+input {
+    margin-bottom:15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display:block;
+        width:100%;
+        padding-right:600px;
+        padding-left:10px;
+
+    }
+    li {
+        display:inline-block;
+        padding-left:10px;
+        padding-right:10px;
+        border-right: 1px solid;
+        padding-top:8px;
+        padding-bottom:8px;
+        border-color: rgb(221, 215, 215);
+    }
+    li:last-child {
+        border-right:none;
+    }
+    main {
+        padding-left:10px;
+    }
+}
